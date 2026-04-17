@@ -1,6 +1,6 @@
 # Volný projekt
 
-> **Jméno a příjmení:** `Doplňte`
+> **Jméno a příjmení:** `Minh Dang Pham`
 
 > **Název projektu:** `Doplňte`
 
