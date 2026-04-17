@@ -35,7 +35,7 @@ _Shrnutí všech odkazů na jednom místě. Průběžně aktualizujte._
 
 | Výstup | Odkaz |
 |---|---|
-| GitHub Pages (live) | [`Doplň odkaz`](#) |
+| GitHub Pages (live) | [`Github Pages`](https://pslib-cz.github.io/2025-p2a-web-volny-projekt-MinhDangPham/) |
 | Grafický manuál (Figma / Canva) | [`Doplň odkaz`](#) |
 | Grafický návrh webu (Figma) | [`Doplň odkaz`](#) |
 | Fotografie / média | [`Doplň odkaz`](#) |
