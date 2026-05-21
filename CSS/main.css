@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+/* 
+Tučnosti:
+300 - Light
+400 - Regular
+500 - Medium
+600 - Semi-Bold
+700 - Bold
+*/
+
+:root {
+    /* Teplá hnědá */
+    --primary-color: #ad7555;
+    /* Teplá hnědá selected */
+    --primary-color-selected: #835136;
+
+    /* Světle béžová */
+    --secondary-color: #fee2c9;
+    /* Světle béžová selected */
+    --secondary-color-selected: #ddb28c;
+
+    /* Tmavší hnědá */
+    --text-color: #3e2a25;
+    /* Teplá hnědá */
+    --secondary-text-color: #ad7555;
+
+    /* Krémová */
+    --background-color: #faf3ee;
+    /* Světle šedá */
+    --secondary-background-color: #ebe2da;
+}
+
+
+.hero__title {
+    font-family: 'Sour Gummy', sans-serif;
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 3.125rem;
+}
+
+.hero__subtitle {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    color: var(--secondary-text-color);
+    font-size: 1.875rem;
+}
+
+.hero__description {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.card__title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.card__price {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: var(--secondary-text-color);
+    font-size: 1.25rem;
+}
+
+.footer__text {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 0.875rem;
+}
+
+.footer__copyright {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 0.75rem;
+}
