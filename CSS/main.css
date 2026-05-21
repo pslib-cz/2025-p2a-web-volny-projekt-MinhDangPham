@@ -30,6 +30,32 @@ Tučnosti:
     --secondary-background-color: #ebe2da;
 }
 
+/* Header */
+.nav__link {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+}
+
+.profile-icon {
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+}
+
+.cart-icon {
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+}
+
 /* Hero */
 .hero__title {
     font-family: 'Sour Gummy', sans-serif;
@@ -74,7 +100,16 @@ Tučnosti:
     font-size: 0.875rem;
 }
 
+.footer__social-icon {
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+}
+
 .footer__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-family: 'Nunito', sans-serif;
     color: var(--text-color);
     font-size: 0.875rem;
@@ -82,6 +117,9 @@ Tučnosti:
 }
 
 .footer__address {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-family: 'Nunito', sans-serif;
     color: var(--text-color);
     font-size: 0.875rem;
@@ -91,4 +129,17 @@ Tučnosti:
     font-family: 'Nunito', sans-serif;
     color: var(--text-color);
     font-size: 0.75rem;
+}
+
+.footer__link img {
+    display: block;
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+}
+.footer__address img {
+    display: block;
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
 }
