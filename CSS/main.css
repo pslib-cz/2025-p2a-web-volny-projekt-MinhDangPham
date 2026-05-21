@@ -30,6 +30,9 @@ Tučnosti:
     --secondary-background-color: #ebe2da;
 }
 
+
+/* ================ Header a footer ================ */
+
 /* Header */
 .nav__link {
     font-family: 'Nunito', sans-serif;
@@ -56,43 +59,6 @@ Tučnosti:
     text-decoration: none;
 }
 
-/* Hero */
-.hero__title {
-    font-family: 'Sour Gummy', sans-serif;
-    font-weight: 700;
-    color: var(--text-color);
-    font-size: 3.125rem;
-}
-
-.hero__subtitle {
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 600;
-    color: var(--secondary-text-color);
-    font-size: 1.875rem;
-}
-
-.hero__description {
-    font-family: 'Nunito', sans-serif;
-    color: var(--text-color);
-    font-size: 1rem;
-}
-
-/* Card */
-.card__title {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    color: var(--text-color);
-    font-size: 1rem;
-}
-
-.card__price {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    color: var(--secondary-text-color);
-    font-size: 1.25rem;
-}
-
-
 /* Footer */
 .footer__text {
     font-family: 'Nunito', sans-serif;
@@ -104,6 +70,13 @@ Tučnosti:
     width: 20px;
     height: 20px;
     text-decoration: none;
+}
+
+.footer__title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1rem;
 }
 
 .footer__link {
@@ -142,4 +115,92 @@ Tučnosti:
     flex-shrink: 0;
     width: 18px;
     height: 18px;
+}
+
+
+/* ================ Domů ================ */
+
+/* Hero */
+.hero__title {
+    font-family: 'Sour Gummy', sans-serif;
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 3.125rem;
+}
+
+.hero__subtitle {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    color: var(--secondary-text-color);
+    font-size: 1.875rem;
+}
+
+.hero__description {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+/* Card */
+.card__title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.card__price {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: var(--secondary-text-color);
+    font-size: 1.25rem;
+}
+
+/* Benefity */
+.benefit__title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.benefit__description {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+
+/* ================ O nás ================ */
+
+/* Tým */
+.team__name {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.team__position {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+
+/* ================ Section ================ */
+
+/* h2 */
+.section__title {
+    font-family: 'Sour Gummy', sans-serif;
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+.section__description {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 1rem;
 }
