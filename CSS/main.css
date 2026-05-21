@@ -30,7 +30,7 @@ Tučnosti:
     --secondary-background-color: #ebe2da;
 }
 
-
+/* Hero */
 .hero__title {
     font-family: 'Sour Gummy', sans-serif;
     font-weight: 700;
@@ -51,6 +51,7 @@ Tučnosti:
     font-size: 1rem;
 }
 
+/* Card */
 .card__title {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
@@ -65,7 +66,22 @@ Tučnosti:
     font-size: 1.25rem;
 }
 
+
+/* Footer */
 .footer__text {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 0.875rem;
+}
+
+.footer__link {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+.footer__address {
     font-family: 'Nunito', sans-serif;
     color: var(--text-color);
     font-size: 0.875rem;
