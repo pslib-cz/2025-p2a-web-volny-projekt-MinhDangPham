@@ -28,6 +28,16 @@ Tučnosti:
     --background-color: #faf3ee;
     /* Světle šedá */
     --secondary-background-color: #ebe2da;
+
+    /* Kategorie */
+    /* Medvídci */
+    --category-bears: #e8d5c4;
+    /* Pejsci */
+    --category-dogs: #c9d9c3;
+    /* Zvířátka */
+    --category-animals: #f2c6c2;
+    /* Fantasy */
+    --category-fantasy: #d8c6e6;
 }
 
 
@@ -139,6 +149,55 @@ Tučnosti:
     font-family: 'Nunito', sans-serif;
     color: var(--text-color);
     font-size: 1rem;
+}
+
+/* Kategorie */
+.categories__title--bears {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1rem;
+    text-decoration: none;
+    position: absolute;
+    background-color: var(--category-bears);
+    padding: 0.5em 3.125em;
+    border-radius: 50px;
+}
+
+.categories__title--dogs {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1rem;
+    text-decoration: none;
+    position: absolute;
+    background-color: var(--category-dogs);
+    padding: 0.5em 3.125em;
+    border-radius: 50px;
+}
+
+.categories__title--animals {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1rem;
+    text-decoration: none;
+    position: absolute;
+    background-color: var(--category-animals);
+    padding: 0.5em 3.125em;
+    border-radius: 50px;
+}
+
+.categories__title--fantasy {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1rem;
+    text-decoration: none;
+    position: absolute;
+    background-color: var(--category-fantasy);
+    padding: 0.5em 3.125em;
+    border-radius: 50px;
 }
 
 /* Card */
