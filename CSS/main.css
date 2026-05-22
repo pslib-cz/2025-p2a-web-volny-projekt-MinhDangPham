@@ -9,6 +9,7 @@ Tučnosti:
 */
 
 :root {
+    /* ================ Hlavní barvy ================ */
     /* Teplá hnědá */
     --primary-color: #ad7555;
     /* Teplá hnědá selected */
@@ -29,7 +30,7 @@ Tučnosti:
     /* Světle šedá */
     --secondary-background-color: #ebe2da;
 
-    /* Kategorie */
+    /* ================ Kategorie ================ */
     /* Medvídci */
     --category-bears: #e8d5c4;
     /* Pejsci */
@@ -42,7 +43,6 @@ Tučnosti:
 
 
 /* ================ Header a footer ================ */
-
 /* Header */
 .nav__link {
     font-family: 'Nunito', sans-serif;
@@ -129,7 +129,6 @@ Tučnosti:
 
 
 /* ================ Domů ================ */
-
 /* Hero */
 .hero__title {
     font-family: 'Sour Gummy', sans-serif;
@@ -236,7 +235,6 @@ Tučnosti:
 
 
 /* ================ O nás ================ */
-
 /* Tým */
 .team__name {
     font-family: 'Nunito', sans-serif;
