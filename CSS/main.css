@@ -286,6 +286,12 @@ Tučnosti:
     font-size: 0.875rem;
 }
 
+.contact-form__label {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 0.875rem;
+}
+
 
 /* ================ Section ================ */
 
