@@ -73,6 +73,19 @@
         </div>
     </section>
 
+    <section class="section-darker">
+        <h2 class="section__title">Napište nám</h2>
+        <form action="#" method="post" class="contact-form">
+            <input type="text" name="name" placeholder="Jméno a příjmení" class="contact-form__input" required>
+            <input type="email" name="email" placeholder="E-mail" class="contact-form__input" required>
+            <input type="subject" name="subject" placeholder="Předmět" class="contact-form__input" required>
+            <textarea type="text" name="message" placeholder="Vaše zpráva" class="contact-form__textarea" rows="10" cols="25" required></textarea>
+            <input type="checkbox" name="consent" id="consent" class="contact-form__checkbox" required>
+            <label for="consent" class="contact-form__checkbox-label">Souhlasím se zpracováním <a href="#ochrana-osobnich-udaju" target="_blank">osobních údajů</a>.</label>
+            <button type="submit" class="contact-form__button">Odeslat zprávu</button>
+        </form>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="footer__container">

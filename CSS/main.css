@@ -275,6 +275,14 @@ Tučnosti:
     height: 52px;
 }
 
+/* Napište nám */
+.contact-form__checkbox-label {
+    gap: 10px;
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 0,875rem;
+}
+
 
 /* ================ Section ================ */
 
