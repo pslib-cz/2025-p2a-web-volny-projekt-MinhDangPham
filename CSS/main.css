@@ -248,6 +248,23 @@ Tučnosti:
 }
 
 
+/* ================ Kontakt ================ */
+/* Kontakt */
+.contact__title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.contact__description {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+
 /* ================ Section ================ */
 
 /* h2 */
