@@ -264,6 +264,17 @@ Tučnosti:
     text-decoration: none;
 }
 
+.contact__social-icon {
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+}
+
+.contact__icon {
+    width: 52px;
+    height: 52px;
+}
+
 
 /* ================ Section ================ */
 
