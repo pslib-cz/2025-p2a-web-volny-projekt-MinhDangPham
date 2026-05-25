@@ -151,16 +151,87 @@ Tučnosti:
 }
 
 /* Kategorie */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.categories_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories__item--bears {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+}
+
+.categories__image {
+    position: absolute;
+    width: 10.25rem;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .categories__title--bears {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     color: var(--text-color);
     font-size: 1rem;
     text-decoration: none;
+    text-align: center;
     position: absolute;
+    z-index: 1;
     background-color: var(--category-bears);
+    width: 4rem;
     padding: 0.5em 3.125em;
     border-radius: 50px;
+    bottom: 0rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.categories__circle--bears {
+    z-index: -1;
+    width: 12rem;
+    height: 12rem;
+    background-color: var(--category-bears);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.categories__item--dogs {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+}
+
+.categories__circle--dogs {
+    z-index: -1;
+    width: 12rem;
+    height: 12rem;
+    background-color: var(--category-dogs);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .categories__title--dogs {
@@ -169,10 +240,34 @@ Tučnosti:
     color: var(--text-color);
     font-size: 1rem;
     text-decoration: none;
+    text-align: center;
     position: absolute;
+    z-index: 1;
     background-color: var(--category-dogs);
+    width: 4rem;
     padding: 0.5em 3.125em;
     border-radius: 50px;
+    bottom: 0rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.categories__item--animals {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+}
+
+.categories__circle--animals {
+    z-index: -1;
+    width: 12rem;
+    height: 12rem;
+    background-color: var(--category-animals);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .categories__title--animals {
@@ -181,10 +276,34 @@ Tučnosti:
     color: var(--text-color);
     font-size: 1rem;
     text-decoration: none;
+    text-align: center;
     position: absolute;
+    z-index: 1;
     background-color: var(--category-animals);
+    width: 4rem;
     padding: 0.5em 3.125em;
     border-radius: 50px;
+    bottom: 0rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.categories__item--fantasy {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+}
+
+.categories__circle--fantasy {
+    z-index: -1;
+    width: 12rem;
+    height: 12rem;
+    background-color: var(--category-fantasy);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .categories__title--fantasy {
@@ -193,10 +312,16 @@ Tučnosti:
     color: var(--text-color);
     font-size: 1rem;
     text-decoration: none;
+    text-align: center;
     position: absolute;
+    z-index: 1;
     background-color: var(--category-fantasy);
+    width: 4rem;
     padding: 0.5em 3.125em;
     border-radius: 50px;
+    bottom: 0rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Card */
