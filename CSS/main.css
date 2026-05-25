@@ -84,6 +84,11 @@ a {
     gap: 1rem;
 }
 
+.logo__image {
+    width: 200px;
+    height: auto;
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -94,6 +99,7 @@ a {
     display: flex;
     list-style: none;
     gap: 1.5rem;
+    padding: 0;
 }
 
 .nav__link {
@@ -147,6 +153,7 @@ a {
     position: absolute;
     margin-top: -1.5rem;
     margin-left: -3rem;
+    cursor: pointer;
 }
 
 .hamburger span {
@@ -273,8 +280,9 @@ a {
 }
 
 .footer__logo-img {
-    width: 12.5rem;
+    width: 150px;
     height: auto;
+    padding-bottom: 0.5rem;
 }
 
 .footer__text {
@@ -369,7 +377,7 @@ a {
 /* ================ Domů ================ */
 /* Hero */
 .hero {
-    padding: 1rem;
+    padding: 3rem;
 }
 
 .hero__title {
@@ -394,7 +402,7 @@ a {
 
 .hero__button {
     margin-top: 1.5rem;
-    padding: 0.9rem 1.75rem;
+    padding: 1rem 2rem;
     border-radius: 50px;
     background-color: var(--primary-color);
     font-family: 'Nunito', sans-serif;
@@ -413,7 +421,7 @@ a {
 
 .hero__button--secondary {
     margin-top: 1.5rem;
-    padding: 0.9rem 1.75rem;
+    padding: 1rem 2rem;
     border-radius: 50px;
     background-color: var(--secondary-color);
     font-family: 'Nunito', sans-serif;
@@ -421,7 +429,7 @@ a {
     color: var(--primary-color);
     text-decoration: none;
     text-align: center;
-    border: solid 3px var(--primary-color);
+    border: solid 2px var(--primary-color);
     font-weight: 700;
 }
 
@@ -432,9 +440,13 @@ a {
 }
 
 @media screen and (max-width: 500px) {
+    .hero {
+        padding: 1rem;
+    }
+
     .hero__button {
         margin-top: 1.5rem;
-        padding: 0.9rem 1.75rem;
+        padding: 1rem 2rem;
         border-radius: 50px;
         background-color: var(--primary-color);
         font-family: 'Nunito', sans-serif;
@@ -449,7 +461,7 @@ a {
 
     .hero__button--secondary {
         margin-top: 0.5rem;
-        padding: 0.9rem 1.75rem;
+        padding: 1rem 2rem;
         border-radius: 50px;
         background-color: var(--secondary-color);
         font-family: 'Nunito', sans-serif;
@@ -457,7 +469,7 @@ a {
         color: var(--primary-color);
         text-decoration: none;
         text-align: center;
-        border: solid 3px var(--primary-color);
+        border: solid 2px var(--primary-color);
         font-weight: 700;
         display: block;
     }
@@ -672,6 +684,26 @@ a {
 }
 
 /* Benefity */
+.benefits__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    padding: 1rem;
+    background-color: var(--secondary-background-color);
+    margin: 2rem;
+    border-radius: 1.5rem;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    
+    border-radius: 1rem;
+}
+
 .benefit__icon {
     width: 40px;
     height: 40px;
@@ -688,6 +720,7 @@ a {
     font-family: 'Nunito', sans-serif;
     color: var(--text-color);
     font-size: 1rem;
+    margin: 0;
 }
 
 
@@ -710,6 +743,14 @@ a {
 
 /* ================ Kontakt ================ */
 /* Kontakt */
+.contact__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .contact__text-title {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
@@ -748,6 +789,19 @@ a {
     color: var(--text-color);
     font-size: 0.875rem;
 }
+
+.section__darker {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: var(--secondary-background-color);
+    border-radius: 1rem;
+}
+
+.section__title {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
 
 
 /* ================ Section ================ */
