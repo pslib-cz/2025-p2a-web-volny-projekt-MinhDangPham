@@ -11,29 +11,43 @@
 <body>
     <!-- Header -->
     <header class="header">
+        <div class="header__container">
             <a href="./Domů.html" class="logo">
-            <img src="../Pictures/Logo/Logo_a_název.svg" alt="Logo">
-        </a>
-        <nav class="nav">
-            <ul>
-                <li><a href="./Domů.html" class="nav__link">Domů</a></li>
-                <li><a href="./Plyšáci.html" class="nav__link">Plyšáci</a></li>
-                <li><a href="./Kategorie.html" class="nav__link">Kategorie</a></li>
-                <li><a href="./O nás.html" class="nav__link">O nás</a></li>
-                <li><a href="./Kontakt.html" class="nav__link">Kontakt</a></li>
-            </ul>
-        </nav>
-        <div class="icons">
-                <a href="#hledat" class="search-icon">
-                <img src="../Pictures/Nav icons/tabler_zoom.svg" alt="Hledat">
+                <img src="../Pictures/Logo/Logo_a_název.svg" alt="Logo">
             </a>
-            <a href="#profil" class="profile-icon">
-                <img src="../Pictures/Nav icons/gravity-ui_person.svg" alt="Profil">
-            </a>
-            <a href="#košík" class="cart-icon">
-                <img src="../Pictures/Nav icons/mmaterial-symbols_shopping-cart-outline-rounded.svg" alt="Košík">
-            </a>
-        </div>
+            <div class="header__right">
+                <div class="hamburger-zone">
+                    <button class="hamburger-btn">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li><a href="./Domů.html" class="nav__link">Domů</a></li>
+                            <li><a href="./Plyšáci.html" class="nav__link">Plyšáci</a></li>
+                            <li><a href="./Kategorie.html" class="nav__link">Kategorie</a></li>
+                            <li><a href="./O nás.html" class="nav__link">O nás</a></li>
+                            <li><a href="./Kontakt.html" class="nav__link">Kontakt</a></li>
+                        </ul>
+                        <div class="icons">
+                            <a href="#hledat" class="search-icon">
+                                <img src="../Pictures/Nav icons/tabler_zoom.svg" alt="Hledat">
+                            </a>
+                            <a href="#profil" class="profile-icon">
+                                <img src="../Pictures/Nav icons/gravity-ui_person.svg" alt="Profil">
+                            </a>
+                            <a href="#košík" class="cart-icon">
+                                <img src="../Pictures/Nav icons/mmaterial-symbols_shopping-cart-outline-rounded.svg"
+                                    alt="Košík">
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
     </header>
 
         <section class="section">
@@ -71,7 +85,7 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="footer__container">
             <div class="footer__brand">
                 <a href="./Domů.html" class="footer__logo">
@@ -143,6 +157,7 @@
         <div class="footer__copyright">
             © 2024 Plyšománie. Všechna práva vyhrazena
         </div>
+        <script src="../JS/hamburger.js"></script>
     </footer>
 </body>
 </html>

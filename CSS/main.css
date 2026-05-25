@@ -29,6 +29,10 @@ Tučnosti:
     --background-color: #faf3ee;
     /* Světle šedá */
     --secondary-background-color: #ebe2da;
+    /* Bílá */
+    --header-background-color: #ffffff;
+    /* Šedobílá */
+    --menu-background-color: #ECECEC;
 
     /* ================ Kategorie ================ */
     /* Medvídci */
@@ -43,12 +47,54 @@ Tučnosti:
 
 
 /* ================ Header a footer ================ */
+
+body {
+    background-color: var(--background-color);
+}
+
 /* Header */
+.header {
+    width: 100%;
+    background-color: var(--header-background-color);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
 .nav__link {
     font-family: 'Nunito', sans-serif;
     color: var(--text-color);
     font-size: 1rem;
     text-decoration: none;
+    white-space: nowrap;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .search-icon {
@@ -69,11 +115,131 @@ Tučnosti:
     text-decoration: none;
 }
 
+/* Hamburger */
+.hamburger-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger {
+    --rotate-time: .15s;
+    --move-time: .1s;
+}
+
+.hamburger {
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    margin-top: -1.5rem;
+    margin-left: -3rem;
+}
+
+.hamburger span {
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: var(--primary-color);
+    border-radius: 4.5px;
+    left: 0;
+    transform-origin: center;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0px;
+}
+
+.hamburger span:nth-child(2) {
+    top: 18px;
+}
+
+.hamburger span:nth-child(3) {
+    bottom: 0px;
+}
+
+@media screen and (max-width: 870px) {
+
+    .hamburger-btn {
+        display: block;
+        position: absolute;
+        z-index: 5;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+        margin-top: 0;
+    }
+
+    .hamburger-zone.active .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: var(--menu-background-color);
+        z-index: 4;
+        padding-top: 7rem;
+        padding-bottom: 2rem;
+    }
+
+    .hamburger-zone.active .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 4rem;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hamburger span {
+        transition: transform 0.5s 0.5s,
+        top 0.5s;
+    }
+
+    .hamburger-zone.active .hamburger span:nth-child(2) {
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    .hamburger-zone.active .hamburger span:nth-child(1) {
+        transform: rotateZ(45deg);
+        top: 18px;
+    }
+
+    .hamburger-zone.active .hamburger span:nth-child(3) {
+        transform: rotateZ(-45deg);
+        top: 18px;
+    }
+}
+
 /* Footer */
+.footer {
+    width: 100%;
+    background-color: var(--secondary-background-color);
+    padding: 2rem;
+}
+
 .footer__text {
     font-family: 'Nunito', sans-serif;
     color: var(--text-color);
     font-size: 0.875rem;
+    display: block;
 }
 
 .footer__social-icon {
@@ -120,6 +286,7 @@ Tučnosti:
     width: 18px;
     height: 18px;
 }
+
 .footer__address img {
     display: block;
     flex-shrink: 0;
@@ -165,6 +332,7 @@ Tučnosti:
     justify-content: center;
     gap: 1rem;
 }
+
 .categories_item {
     display: flex;
     align-items: center;
