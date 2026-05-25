@@ -27,6 +27,8 @@ Tučnosti:
 
     /* Krémová */
     --background-color: #faf3ee;
+    /* Šedá */
+    --gray-color: #DED6CF;
     /* Světle šedá */
     --secondary-background-color: #ebe2da;
     /* Bílá */
@@ -48,8 +50,19 @@ Tučnosti:
 
 /* ================ Header a footer ================ */
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 body {
     background-color: var(--background-color);
+}
+
+a {
+    display: inline-block;
 }
 
 /* Header */
@@ -74,7 +87,7 @@ body {
 .nav {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .nav__list {
@@ -120,7 +133,6 @@ body {
     display: none;
     background: none;
     border: none;
-    cursor: pointer;
     padding: 0;
 }
 
@@ -196,20 +208,32 @@ body {
         flex-direction: row;
         justify-content: center;
         gap: 3rem;
-        margin-top: 4rem;
+        margin-top: 0.5rem;
     }
 
     .nav__list {
         flex-direction: column;
-        align-items: center;
-        gap: 3rem;
+        align-items: stretch;
+        gap: 0;
         padding: 0;
         margin: 0;
+        width: 100%;
+    }
+
+    .nav__list li {
+        width: 100%;
+    }
+
+    .nav__link {
+        display: block;
+        width: 100%;
+        padding: 1rem 0;
+        text-align: center;
     }
 
     .hamburger span {
         transition: transform 0.5s 0.5s,
-        top 0.5s;
+            top 0.5s;
     }
 
     .hamburger-zone.active .hamburger span:nth-child(2) {
@@ -233,19 +257,58 @@ body {
     width: 100%;
     background-color: var(--secondary-background-color);
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    align-items: start;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.footer__logo-img {
+    width: 12.5rem;
+    height: auto;
 }
 
 .footer__text {
     font-family: 'Nunito', sans-serif;
     color: var(--text-color);
     font-size: 0.875rem;
-    display: block;
+    max-width: 240px;
+    margin-top: 0rem;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.footer__brand {
+    padding-bottom: 2rem;
 }
 
 .footer__social-icon {
     width: 20px;
     height: 20px;
     text-decoration: none;
+    background-color: var(--gray-color);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 .footer__title {
@@ -253,6 +316,13 @@ body {
     font-weight: 600;
     color: var(--text-color);
     font-size: 1rem;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 2rem;
 }
 
 .footer__link {
@@ -263,6 +333,7 @@ body {
     color: var(--text-color);
     font-size: 0.875rem;
     text-decoration: none;
+    padding-bottom: 0.25rem;
 }
 
 .footer__address {
@@ -297,6 +368,10 @@ body {
 
 /* ================ Domů ================ */
 /* Hero */
+.hero {
+    padding: 1rem;
+}
+
 .hero__title {
     font-family: 'Sour Gummy', sans-serif;
     font-weight: 700;
@@ -317,12 +392,84 @@ body {
     font-size: 1rem;
 }
 
+.hero__button {
+    margin-top: 1.5rem;
+    padding: 0.9rem 1.75rem;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+}
+
+.hero__button--icon {
+    display: inline-block;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero__button--secondary {
+    margin-top: 1.5rem;
+    padding: 0.9rem 1.75rem;
+    border-radius: 50px;
+    background-color: var(--secondary-color);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-align: center;
+    border: solid 3px var(--primary-color);
+    font-weight: 700;
+}
+
+.button-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 500px) {
+    .hero__button {
+        margin-top: 1.5rem;
+        padding: 0.9rem 1.75rem;
+        border-radius: 50px;
+        background-color: var(--primary-color);
+        font-family: 'Nunito', sans-serif;
+        font-size: 1rem;
+        color: var(--secondary-color);
+        text-decoration: none;
+        text-align: center;
+        font-weight: 700;
+        display: block;
+    }
+
+
+    .hero__button--secondary {
+        margin-top: 0.5rem;
+        padding: 0.9rem 1.75rem;
+        border-radius: 50px;
+        background-color: var(--secondary-color);
+        font-family: 'Nunito', sans-serif;
+        font-size: 1rem;
+        color: var(--primary-color);
+        text-decoration: none;
+        text-align: center;
+        border: solid 3px var(--primary-color);
+        font-weight: 700;
+        display: block;
+    }
+}
+
 /* Kategorie */
 .section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 4rem;
 }
 
 .categories {
@@ -338,6 +485,23 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.categories_item.hidden {
+    display: none;
+}
+
+.categories__button {
+    display: none;
+    margin: 1.5rem auto 0;
+    padding: 0.9rem 1.75rem;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+}
+
 
 .categories__item--bears {
     position: relative;
