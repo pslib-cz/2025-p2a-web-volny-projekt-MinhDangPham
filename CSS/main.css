@@ -65,6 +65,19 @@ a {
     display: inline-block;
 }
 
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 856px) {
+    .body {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+
 /* Header */
 .header {
     width: 100%;
@@ -808,6 +821,41 @@ a {
 
 /* ================ O nás ================ */
 /* Tým */
+.team__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.team__member {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.team__picture {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.team__info {
+    display: inline-block;
+
+}
+
+.team__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 .team__name {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
@@ -820,6 +868,7 @@ a {
     font-weight: 400;
     color: var(--text-color);
     font-size: 1rem;
+    display: block;
 }
 
 
@@ -833,11 +882,22 @@ a {
     gap: 1rem;
 }
 
+.contact__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .contact__text-title {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 1.25rem;
+    display: block;
+}
+
+.contact__text {
+    display: inline-block;
 }
 
 .contact__text-description {
@@ -845,25 +905,90 @@ a {
     color: var(--text-color);
     font-size: 1rem;
     text-decoration: none;
+    margin: 0;
+}
+
+.contact__social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .contact__social-icon {
     width: 34px;
     height: 34px;
     text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    border-radius: 50%;
 }
 
 .contact__icon {
     width: 40px;
     height: 40px;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 50%;
+    object-fit: contain;
 }
 
 /* Napište nám */
-.contact-form__checkbox-label {
-    gap: 10px;
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.contact-form__input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
     font-family: 'Nunito', sans-serif;
     color: var(--text-color);
     font-size: 0.875rem;
+    box-sizing: border-box;
+}
+
+.contact-form__textarea {
+    width: 100%;
+    height: 150px;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.contact-form__button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.contact-form__consent {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-form__checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 0.875rem;
+    gap: 0.25rem;
 }
 
 .contact-form__label {
@@ -873,17 +998,17 @@ a {
 }
 
 .section__darker {
-    margin: 2rem;
+    margin: 2rem auto;
     padding: 2rem;
     background-color: var(--secondary-background-color);
     border-radius: 1rem;
+    width: min(400px, 100%);
 }
 
 .section__title {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-
 
 
 /* ================ Section ================ */
@@ -900,4 +1025,5 @@ a {
     font-family: 'Nunito', sans-serif;
     color: var(--text-color);
     font-size: 1rem;
+    padding: 0 1.5rem;
 }
