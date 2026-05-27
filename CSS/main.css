@@ -1060,6 +1060,18 @@ a {
 
 /* ================ Section ================ */
 
+
+.section__title--main {
+    font-family: 'Sour Gummy', sans-serif;
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
 /* h2 */
 .section__title {
     font-family: 'Sour Gummy', sans-serif;
