@@ -495,6 +495,7 @@ a {
     align-items: center;
     justify-content: center;
     padding-bottom: 4rem;
+    gap: 1rem;
 }
 
 .categories {
@@ -509,8 +510,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
 }
 
 .categories_item.hidden {
@@ -536,8 +537,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
 }
 
 .categories__title--bears {
@@ -550,7 +551,7 @@ a {
     position: absolute;
     z-index: 1;
     background-color: var(--category-bears);
-    width: 100px;
+    width: 80px;
     padding: 0.5em 2.5em;
     border-radius: 50px;
     bottom: 0rem;
@@ -598,7 +599,7 @@ a {
     position: absolute;
     z-index: 1;
     background-color: var(--category-dogs);
-    width: 100px;
+    width: 80px;
     padding: 0.5em 2.5em;
     border-radius: 50px;
     bottom: 0rem;
@@ -634,7 +635,7 @@ a {
     position: absolute;
     z-index: 1;
     background-color: var(--category-animals);
-    width: 100px;
+    width: 80px;
     padding: 0.5em 2.5em;
     border-radius: 50px;
     bottom: 0rem;
@@ -670,7 +671,7 @@ a {
     position: absolute;
     z-index: 1;
     background-color: var(--category-fantasy);
-    width: 100px;
+    width: 80px;
     padding: 0.5em 2.5em;
     border-radius: 50px;
     bottom: 0rem;
@@ -710,7 +711,7 @@ a {
 .products__item {
     display: flex;
     flex-direction: column;
-    max-width: 200px;
+    max-width: 160px;
     border: solid 3px var(--menu-background-color);
     border-radius: 1rem;
 }
@@ -746,7 +747,6 @@ a {
     width: 100%;
     aspect-ratio: 1 / 1;
     overflow: hidden;
-
     background-color: var(--menu-background-color);
 }
 
@@ -808,6 +808,10 @@ a {
   .categories__button {
     display: block;
   }
+}
+
+.button__text--tertiary {
+    color: var(--text-color);
 }
 
 /* Benefity */
@@ -1054,12 +1058,6 @@ a {
 }
 }
 
-.section__title {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-
 /* ================ Section ================ */
 
 /* h2 */
@@ -1068,6 +1066,8 @@ a {
     font-weight: 700;
     color: var(--text-color);
     font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .section__description {
