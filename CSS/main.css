@@ -415,7 +415,7 @@ a {
 
 .hero__button {
     margin-top: 1.5rem;
-    padding: 1rem 2rem;
+    padding: 0.75rem 2rem;
     border-radius: 50px;
     background-color: var(--primary-color);
     font-family: 'Nunito', sans-serif;
@@ -434,7 +434,7 @@ a {
 
 .hero__button--secondary {
     margin-top: 1.5rem;
-    padding: 1rem 2rem;
+    padding: 0.75rem 2rem;
     border-radius: 50px;
     background-color: var(--secondary-color);
     font-family: 'Nunito', sans-serif;
@@ -459,7 +459,7 @@ a {
 
     .hero__button {
         margin-top: 1.5rem;
-        padding: 1rem 2rem;
+        padding: 0.75rem 2rem;
         border-radius: 50px;
         background-color: var(--primary-color);
         font-family: 'Nunito', sans-serif;
@@ -474,7 +474,7 @@ a {
 
     .hero__button--secondary {
         margin-top: 0.5rem;
-        padding: 1rem 2rem;
+        padding: 0.75rem 2rem;
         border-radius: 50px;
         background-color: var(--secondary-color);
         font-family: 'Nunito', sans-serif;
@@ -509,8 +509,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 .categories_item.hidden {
@@ -536,8 +536,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 .categories__title--bears {
@@ -550,7 +550,7 @@ a {
     position: absolute;
     z-index: 1;
     background-color: var(--category-bears);
-    width: 4rem;
+    width: 100px;
     padding: 0.5em 2.5em;
     border-radius: 50px;
     bottom: 0rem;
@@ -598,7 +598,7 @@ a {
     position: absolute;
     z-index: 1;
     background-color: var(--category-dogs);
-    width: 4rem;
+    width: 100px;
     padding: 0.5em 2.5em;
     border-radius: 50px;
     bottom: 0rem;
@@ -634,7 +634,7 @@ a {
     position: absolute;
     z-index: 1;
     background-color: var(--category-animals);
-    width: 4rem;
+    width: 100px;
     padding: 0.5em 2.5em;
     border-radius: 50px;
     bottom: 0rem;
@@ -670,7 +670,7 @@ a {
     position: absolute;
     z-index: 1;
     background-color: var(--category-fantasy);
-    width: 4rem;
+    width: 100px;
     padding: 0.5em 2.5em;
     border-radius: 50px;
     bottom: 0rem;
@@ -710,7 +710,7 @@ a {
 .products__item {
     display: flex;
     flex-direction: column;
-    max-width: 150px;
+    max-width: 200px;
     border: solid 3px var(--menu-background-color);
     border-radius: 1rem;
 }
@@ -773,7 +773,7 @@ a {
 
 .categories__button {
     margin-top: 0.5rem;
-    padding: 1rem 2rem;
+    padding: 0.75rem 2rem;
     border-radius: 50px;
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
@@ -787,7 +787,7 @@ a {
 
 .products__button {
     margin-top: 0.5rem;
-    padding: 1rem 2rem;
+    padding: 0.75rem 2rem;
     border-radius: 50px;
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
@@ -1023,6 +1023,7 @@ a {
     color: var(--text-color);
     font-size: 0.875rem;
     gap: 0.25rem;
+    flex-wrap: wrap;
 }
 
 .contact-form__label {
@@ -1036,7 +1037,21 @@ a {
     padding: 2rem;
     background-color: var(--secondary-background-color);
     border-radius: 1rem;
-    width: min(400px, 100%);
+    width: min(280px, 100%);
+}
+
+@media screen and (min-width: 500px) {
+    .section__darker {
+        width: min(400px, 100%);
+    }
+    .contact-form__checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 0.875rem;
+    gap: 0.25rem;
+}
 }
 
 .section__title {
