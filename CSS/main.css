@@ -509,24 +509,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 150px;
+    height: 150px;
 }
 
 .categories_item.hidden {
     display: none;
 }
-
-.categories__button {
-    display: none;
-    margin: 1.5rem auto 0;
-    padding: 0.9rem 1.75rem;
-    border: none;
-    border-radius: 50px;
-    background-color: var(--primary-color);
-    color: white;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
-}
-
 
 .categories__item--bears {
     position: relative;
@@ -543,12 +532,12 @@ a {
     transform: translate(-50%, -50%);
 }
 
-.categories_item {
+.categories_item-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 150px;
     height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .categories__title--bears {
@@ -689,6 +678,12 @@ a {
     transform: translateX(-50%);
 }
 
+@media screen and (max-width: 600px) {
+  .categories_item:nth-child(n+3) {
+    display: none;
+  }
+}
+
 /* Card */
 .card__title {
     font-family: 'Nunito', sans-serif;
@@ -774,6 +769,45 @@ a {
     width: 24px;
     height: 24px;
     vertical-align: middle;
+}
+
+.categories__button {
+    margin-top: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-align: center;
+    border: solid 2px var(--primary-color);
+    font-weight: 700;
+    display: none;
+}
+
+.products__button {
+    margin-top: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-align: center;
+    border: solid 2px var(--primary-color);
+    font-weight: 700;
+    display: none;
+}
+
+@media screen and (max-width: 664px) {
+  .products__item:nth-child(n+3) {
+    display: none;
+  }
+
+  .products__button,
+  .categories__button {
+    display: block;
+  }
 }
 
 /* Benefity */
