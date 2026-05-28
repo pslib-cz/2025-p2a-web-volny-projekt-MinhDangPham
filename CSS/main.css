@@ -61,6 +61,12 @@ body {
     background-color: var(--background-color);
 }
 
+@media (max-width: 1920px) {
+    body {
+        margin: auto;
+    }
+}
+
 a {
     display: inline-block;
 }
@@ -1125,4 +1131,17 @@ a {
 .underline-icon {
     width: 18px;
     height: 18px;
+}
+
+/* ================ Section ================ */
+
+.product__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 1rem;
 }
