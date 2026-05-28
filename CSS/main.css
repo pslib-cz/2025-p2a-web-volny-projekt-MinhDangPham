@@ -1095,5 +1095,6 @@ a {
     font-family: 'Nunito', sans-serif;
     color: var(--text-color);
     font-size: 1rem;
-    padding: 0 1.5rem;
+    padding: 0;
+    margin: 0 4rem;
 }
