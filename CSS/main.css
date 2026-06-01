@@ -689,6 +689,14 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 160px;
+    height: 160px;
+}
+
+.categories_item-tertiary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 300px;
     height: 300px;
 }
