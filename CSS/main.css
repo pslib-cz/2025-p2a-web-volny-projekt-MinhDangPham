@@ -61,12 +61,11 @@ body {
     height: 100%;
 }
 
-body {
-    
+body {/*
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;*/
 /*
     display: flex;
     flex-direction: column;
@@ -421,32 +420,30 @@ a {
 
 /* ================ Domů ================ */
 /* Hero */
-.hero {
-    padding: 3rem;
-    background-image: url('../Pictures/Hero background/Teddy-background-saturated.jpg');
-    background-size: cover;
-    background-position: center;
-    z-index: -2;
-}
 
 .hero {
     padding: 4rem 3rem;
     min-height: 400px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    background:
-        linear-gradient(90deg, var(--secondary-color) 0%,
+    background: linear-gradient(90deg, var(--secondary-color) 0%,
             var(--secondary-color) 50%,
             var(--secondary-color-semi-transparent) 76%,
             var(--secondary-color-transparent) 100%),
-        url('../Pictures/Hero background/Teddy-background-saturated.jpg');
-
+            url('../Pictures/Hero background/Teddy-background-saturated.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 760px) {
+    .hero {
+        min-height: auto;
+        padding: 2rem 1rem;
+    }
+    
 }
 
 .hero__title {
@@ -625,6 +622,10 @@ a {
         width: 100%;
         gap: 1rem;
     }
+}
+
+.product__rating {
+    
 }
 
 /* Kategorie */
@@ -1087,7 +1088,7 @@ a {
     list-style: none;
     padding: 1rem;
     background-color: var(--secondary-background-color);
-    margin: 2rem 1rem;
+    margin: 2rem 0;
     border-radius: 1.5rem;
     max-width: 1200px;
 }
