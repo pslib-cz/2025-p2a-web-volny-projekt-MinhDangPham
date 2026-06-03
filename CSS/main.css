@@ -44,12 +44,16 @@ Tučnosti:
     /* ================ Kategorie ================ */
     /* Medvídci */
     --category-bears: #e8d5c4;
+    --category-bears-hover: #DDB692;
     /* Pejsci */
     --category-dogs: #c9d9c3;
+    --category-dogs-hover: #97D082;
     /* Zvířátka */
     --category-animals: #f2c6c2;
+    --category-animals-hover: #ECA19A;
     /* Fantasy */
     --category-fantasy: #d8c6e6;
+    --category-fantasy-hover: #B17FDE;
 }
 
 
@@ -694,10 +698,51 @@ a {
     display: none;
 }
 
+.categories__item__product--bears {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
 .categories__item--bears {
     position: relative;
-    width: 300px;
+    width: 160px;
     height: 100%;
+}
+
+.categories__item--bears:hover .categories__circle--bears {
+    background-color: var(--category-bears-hover);
+    
+}
+
+.categories__item--bears:hover .categories__title--bears {
+    background-color: var(--category-bears-hover);
+}
+
+.categories__item--dogs:hover .categories__circle--dogs {
+    background-color: var(--category-dogs-hover);
+}
+
+.categories__item--dogs:hover .categories__title--dogs {
+    background-color: var(--category-dogs-hover);
+}
+
+.categories__item--animals:hover .categories__circle--animals {
+    background-color: var(--category-animals-hover);
+    
+}
+
+.categories__item--animals:hover .categories__title--animals {
+    background-color: var(--category-animals-hover);
+}
+
+.categories__item--fantasy:hover .categories__circle--fantasy {
+    background-color: var(--category-fantasy-hover);
+    
+}
+
+.categories__item--fantasy:hover .categories__title--fantasy {
+    background-color: var(--category-fantasy-hover);
 }
 
 .categories__image {
