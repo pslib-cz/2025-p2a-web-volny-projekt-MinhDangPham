@@ -38,6 +38,8 @@ Tučnosti:
     --header-background-color: #ffffff;
     /* Šedobílá */
     --menu-background-color: #ECECEC;
+    /* Šedobíla hover */
+    --menu-background-color-hover: #D3D3D3;
     /* Žlutá */
     --star-color: #FFEE00;
 
@@ -954,6 +956,10 @@ a {
     overflow: hidden;
 }
 
+.card__item:hover {
+    border-color: var(--menu-background-color-hover);
+} 
+
 .cards__info {
     padding: 0.75rem;
     display: flex;
@@ -1018,7 +1024,7 @@ a {
 }
 
 .cards__picture:hover{
-    background-color: var(--secondary-color);
+    background-color: var(--menu-background-color-hover);
 }
 
 .cards__price {
