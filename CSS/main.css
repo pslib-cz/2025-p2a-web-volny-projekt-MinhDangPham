@@ -1682,7 +1682,9 @@ a {
     flex-direction: row;
     gap: 1rem;
     padding: 1rem;
+    margin: 0 1rem;
     border-radius: 1rem;
+    box-sizing: border-box;
     max-width: 400px;
     width: 100%;
     background-color: var(--secondary-background-color);
