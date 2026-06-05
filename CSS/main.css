@@ -69,12 +69,13 @@ body {
     height: 100%;
 }
 
-body {/*
+body {
+    /*
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;*/
-/*
+    /*
     display: flex;
     flex-direction: column;
     min-height: 100vh;*/
@@ -444,7 +445,7 @@ a {
             var(--secondary-color) 50%,
             var(--secondary-color-semi-transparent) 76%,
             var(--secondary-color-transparent) 100%),
-            url('../Pictures/Hero background/Teddy-background-saturated.jpg');
+        url('../Pictures/Hero background/Teddy-background-saturated.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -455,7 +456,7 @@ a {
         min-height: auto;
         padding: 2rem 1rem;
     }
-    
+
 }
 
 .hero__title {
@@ -491,6 +492,10 @@ a {
     font-weight: 700;
     border: none;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
 }
 
 .hero__button:hover {
@@ -515,6 +520,10 @@ a {
     text-align: center;
     border: solid 2px var(--primary-color);
     font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
 }
 
 .hero__button--secondary:hover {
@@ -533,6 +542,10 @@ a {
     font-weight: 700;
     border: none;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
 }
 
 .hero__button__details:hover {
@@ -556,6 +569,10 @@ a {
     text-align: center;
     border: solid 2px var(--primary-color);
     font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
 }
 
 .hero__button__details--secondary:hover {
@@ -574,6 +591,18 @@ a {
     vertical-align: middle;
 }
 
+.hero__button svg,
+.hero__button--secondary svg,
+.hero__button__details svg,
+.hero__button__details--secondary svg,
+.cards__button svg,
+.categories__button svg,
+.product__rating-link svg,
+.product__reviews-link svg,
+.footer__link svg {
+    display: block;
+}
+
 @media screen and (max-width: 500px) {
     .hero {
         padding: 1rem;
@@ -590,7 +619,12 @@ a {
         text-decoration: none;
         text-align: center;
         font-weight: 700;
-        display: block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        width: 100%;
+        box-sizing: border-box;
     }
 
 
@@ -606,7 +640,12 @@ a {
         text-align: center;
         border: solid 2px var(--primary-color);
         font-weight: 700;
-        display: block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
@@ -626,8 +665,12 @@ a {
         text-decoration: none;
         text-align: center;
         font-weight: 700;
-        display: block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
         width: 100%;
+        box-sizing: border-box;
     }
 
 
@@ -641,7 +684,10 @@ a {
         text-align: center;
         border: solid 2px var(--primary-color);
         font-weight: 700;
-        display: block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
         width: 100%;
         box-sizing: border-box;
     }
@@ -714,7 +760,7 @@ a {
 
 .categories__item--bears:hover .categories__circle--bears {
     background-color: var(--category-bears-hover);
-    
+
 }
 
 .categories__item--bears:hover .categories__title--bears {
@@ -731,7 +777,7 @@ a {
 
 .categories__item--animals:hover .categories__circle--animals {
     background-color: var(--category-animals-hover);
-    
+
 }
 
 .categories__item--animals:hover .categories__title--animals {
@@ -740,7 +786,7 @@ a {
 
 .categories__item--fantasy:hover .categories__circle--fantasy {
     background-color: var(--category-fantasy-hover);
-    
+
 }
 
 .categories__item--fantasy:hover .categories__title--fantasy {
@@ -958,7 +1004,7 @@ a {
 
 .card__item:hover {
     border-color: var(--menu-background-color-hover);
-} 
+}
 
 .cards__info {
     padding: 0.75rem;
@@ -1023,7 +1069,7 @@ a {
     background-color: var(--menu-background-color);
 }
 
-.cards__picture:hover{
+.cards__picture:hover {
     background-color: var(--menu-background-color-hover);
 }
 
@@ -1041,6 +1087,10 @@ a {
     padding: 0.5rem;
     cursor: pointer;
     border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
 }
 
 .cards__footer__button:hover {
@@ -1164,7 +1214,11 @@ a {
 
     .cards__button,
     .categories__button {
-        display: block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        width: auto;
     }
 }
 
@@ -1593,6 +1647,10 @@ a {
     cursor: pointer;
     box-sizing: border-box;
     width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
 }
 
 .product__rating-link:hover {
@@ -1666,7 +1724,15 @@ a {
     border: solid 2px var(--primary-color);
     font-weight: 700;
     align-self: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
 
+}
+
+.product__reviews-link:hover {
+    background-color: var(--menu-background-color);
 }
 
 /* ================ Gallery ================ */
