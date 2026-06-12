@@ -722,6 +722,13 @@ a {
 
 }
 
+@media screen and (max-width: 370px) {
+    .categories {
+        grid-template-columns: 1fr;
+    }
+
+}
+
 .categories_item {
     display: flex;
     align-items: center;
