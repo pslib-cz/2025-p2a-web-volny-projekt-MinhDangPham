@@ -45,5 +45,5 @@ _Shrnutí všech odkazů na jednom místě. Průběžně aktualizujte._
 ## Poznámky
 
 _Prostor pro vlastní poznámky, zpětnou vazbu, TODO apod._
-
+a
 `Volný prostor pro poznámky.`
